@@ -1,0 +1,27 @@
+# non-terminal rules
+S → NP VP
+S → S PP
+VP → V VP
+VP → V NP
+VP → V PP
+VP → VP Conj VP
+
+
+# terminal rules
+NP → Leo
+S → S Conj S
+NP → Louisa
+NP → talks
+NP → shows
+Conj → and
+
+
+	1	 		8	 
+	3	 		8	 
+	4	 		6	 
+	2	 		6	 
+	2	 		2	 
+	4	 	P → to	2	 
+	5	 	V → talks	3	 
+PP → P NP	1	 	V → gives	4	 
+NP → NP PP	3	 	V → shows	3
